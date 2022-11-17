@@ -1,11 +1,10 @@
 // Define a function that finds the total of all products from a list of products
+// / Returns the total of all products from a list of products
+// args:
+//  products: A list of products
+//  returns:
+// The total of all products
 double getTotal(List products) {
-  /// Returns the total of all products from a list of products
-  // args:
-  //  products: A list of products
-  //  returns:
-  // The total of all products
-
   double total = 0.0;
   for (var product in products) {
     total += product['price'];
@@ -14,41 +13,49 @@ double getTotal(List products) {
 }
 
 // Define a function that finds amount of products from a list of products
+/// Returns the amount of products from a list of products
+// args:
+//  products: A list of products
+//  returns:
+// The amount of products
 int getAmount(List products) {
-  /// Returns the amount of products from a list of products
-  // args:
-  //  products: A list of products
-  //  returns:
-  // The amount of products
-
   int amount = 0;
+  for (var product in products) {
+    amount += 1;
+  }
 
   return amount;
 }
 
 // Define a function that finds the total of prices from a list of products
+/// Returns the total of prices from a list of products
+// args:
+//  products: A list of products
+//  returns:
+// The total of prices
+
 double getTotalPrices(List products) {
-  /// Returns the total of prices from a list of products
-  // args:
-  //  products: A list of products
-  //  returns:
-  // The total of prices
-
   double total = 0.0;
-
+  for (var product in products) {
+    total += product['price'];
+  }
   return total;
 }
 
 // Define a function that finds the amount of fruits from a list of products
+/// Returns the amount of fruits from a list of products
+// args:
+//  products: A list of products
+//  returns:
+// The amount of fruits
 int getAmountFruits(List products) {
-  /// Returns the amount of fruits from a list of products
-  // args:
-  //  products: A list of products
-  //  returns:
-  // The amount of fruits
-
   int amount = 0;
-
+  for (var product in products) {
+    if (product['type'=='fruit'])
+    amount +=1;
+    // name.add(product['name']);
+    
+  }
   return amount;
 }
 
@@ -152,7 +159,7 @@ String getMostExpensive(List products) {
   // The most expensive product
 
   String mostExpensive = '';
-
+  print('producs');
   return mostExpensive;
 }
 

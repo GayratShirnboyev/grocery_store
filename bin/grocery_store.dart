@@ -10,5 +10,5 @@ void main() {
 
   // Convert the contents to a map
   var groceryMap = jsonDecode(contents);
-  print(getTotalPrices(groceryMap['products']));
+  print(getAmountFruits(groceryMap['products']));
 }
